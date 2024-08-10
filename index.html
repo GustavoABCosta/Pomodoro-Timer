@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-contexto="pomodoro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<main class="app__main">
+    <header class="app__header"> Pomodoro Timer </header>
+    <section class="app__section-card-container">
+        <div class="app__card">
+            <ul class="app__card-lista">
+                <li class="app__card-lista-item">
+                    <button data-contexto="pomodoro" class="app__card-botao app__card-botao--pomodoro ativo"> Pomodoro </button>
+                <li class="app__card-lista-item">
+                    <button data-contexto="curto" class="app__card-botao app__card-botao--curto"> Descanso curto </button>
+                <li class="app__card-lista-item">
+                    <button data-contexto="longo" class="app__card-botao app__card-botao--longo"> Descanso longo </button>
+                </li>
+            </ul>
+            <div id="timer" class="app__card-timer"></div>
+            <div class="app__card-botao-iniciar">
+                <button id="start-pause" class="app__card-botao-iniciar-primario">
+                    <img class="app__card-botao-iniciar_icon" src="./assets/play_arrow.png" alt="icone play">
+                    <span> Iniciar </span>
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+    <script src="script.js"> </script>
+</body>
+</html>
